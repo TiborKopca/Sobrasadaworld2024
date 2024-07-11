@@ -1,4 +1,39 @@
-# Plantilla: Arquitectura FrontEnd
+# SOBRASADA WORLD Website
+
+* Figma Design
+* GRID & SUBGRID
+* CHANGE LANGUAGE (english, spanish, slovak)
+* Language detection & redirection
+* Language raw text data stored in JSON file and loaded dynamically
+* Language selection stored in cookies
+* FORM DATA STORED IN JSON
+* Month in Discount is shown for actual date and in selected language
+
+
+
+
+## Description & Functionality
+- Adding items to the shopping cart
+- Removing items from the shopping cart
+- Clearing the shopping cart
+- Quantity of items in the shopping cart
+
+## Screenshot
+![here](/screenshot/JS-2024-ShoppingCart.png)
+
+## Online Link
+[github Pages Link](https://tiborkopca.github.io/Javascript2024-ShoppingCart/)
+
+## Authors
+
+- [@TiborKopca](https://github.com/TiborKopca)
+
+
+
+
+
+
+
 
 ##### Plantilla Básica para poder empezar casi cualquier proyecto en **FrontEnd**
 >

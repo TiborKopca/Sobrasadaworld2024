@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- SEO = Básico -->
+    <!-- Cada página del sitio tiene que ser diferente el título y la descripción -->
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Etiquetas Open Graph y Twitter Card, para crear el SEO de Redes Sociales -->
+    <meta property="og:title" content="Título de tu página" />
+    <meta property="og:description" content="Descripción de tu página" />
+    <meta
+      property="og:image"
+      content="URL de la imagen que quieres mostrar en las redes sociales"
+    />
+    <meta property="og:url" content="URL de tu página" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Título de tu página" />
+    <meta name="twitter:description" content="Descripción de tu página" />
+    <meta
+      name="twitter:image"
+      content="URL de la imagen que quieres mostrar en Twitter"
+    />
+
+    <!-- App Web, inidicar al navegador que elementos mostrar en un JSON -->
+    <link rel="manifest" href="site.webmanifest" />
+    <!-- icono de acceso para IOS -->
+    <link rel="apple-touch-icon" href="icon.png" />
+    <!-- Recordar que favicon.ico tiene que estar en el directorio inicial -->
+
+    <!-- links de estilos -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Se cambia el tema de algunos navegadores -->
+    <meta name="theme-color" content="#fafafa" />
+    <!-- Código de las plataformas de Análisis -->
+    <script></script>
+
+    <!-- Scripts a cargar antes de la renderización -->
+    <!-- <script src="preloader.js"></script> -->
+    
+    <script src="/js/main.js" defer></script>
+
+  </head>
+  <body>
+    <div id="container" class="main__container">
+      <nav class="container__idiomas inter-light">
+        <a href="?lang=es" class="container__es">ES</a><span class="container__span"> / </span>
+        <a href="?lang=en" class="container__en">EN</a><span> /</span>
+        <a href="?lang=sk" class="container__sk">SK</a>
+      </nav>
+      <img src="/img/desktop/sello.avif" alt="" class="logo" id="logo" />
+      <p class="header inter-body">
+        Potvrdzujeme, že tento produkt je autentická Sobrasada de Mallorca s chráneným označením pôvodu. Vyrobená tradičnými metódami na ostrove Mallorca, zaručujeme jej vynikajúcu kvalitu a jedinečnú chuť. Sobrasada World sa zaväzuje ponúkať len to najlepšie z našej zeme.
+      </p>
+      <img
+        src="/img/desktop/sobrasada-arriba_1.avif"
+        alt=""
+        class="sobrasada-arriba"
+        id="sobrasadaArriba"
+      />
+      <img
+        src="/img/desktop/sobrasada-abajo_1.avif"
+        alt=""
+        class="sobrasada-abajo"
+        id="sobrasadaAbajo"
+      />
+      <h1 class="page__title inter-light">Sobrasada</h1>
+      <h2 class="page__title-small inter-black">World</h2>
+      <p class="main__text inter-body">
+        Sobrasada World: Autentický mallorský zážitok na vašom stole. Zo srdca Mallorky ponúkame najlepšiu sobrasadu, tradičnú klobásu s chráneným označením pôvodu. Naša vášeň pre tento jedinečný gurmánsky produkt nás vedie k jej šíreniu po celom svete. S online objednávkami a medzinárodnou dopravou garantujeme pravosť každej sobrasady. Objavte tradičnú chuť a roztierateľnú textúru našej prémiovej sobrasady. Vychutnajte si esenciu Mallorky v každom súste s Sobrasada World.
+      </p>
+      <section class="button__container">
+        <a href="#" class="main__button">Objednávka</a>
+        <p class="button__description" id="buttonDescription">
+          Zľava 50% zo všetkých našich produktov, v mesiaci <span
+            class=""
+            id="button__description-mes"
+          ></span
+          >?
+        </p>
+      </section>
+      <aside class="main__aside-left"></aside>
+      <aside class="main__aside-center"></aside>
+      <section class="aside__imgcontainer">
+        <img
+          src="/img/desktop/pan-largo.avif"
+          alt="scrollable image"
+          id="scrollableImage"
+          class="scrollable-image"
+        />
+      </section>
+      <aside class="main__aside-right"></aside>
+    </div>
+   
+  </body>
+</html>

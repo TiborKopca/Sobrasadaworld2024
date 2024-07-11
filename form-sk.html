@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="sk">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- SEO = Básico -->
+    <!-- Cada página del sitio tiene que ser diferente el título y la descripción -->
+    <title id="title"></title>
+    <meta
+      name="description"
+      content="Discover authentic Mallorcan sobrasada. Online orders, international shipping. Traditional flavor and premium quality guaranteed. Taste the essence of Mallorca!"
+    />
+    <meta name="keywords" content="" />
+
+    <!-- Etiquetas Open Graph y Twitter Card, para crear el SEO de Redes Sociales -->
+    <meta property="og:title" content="Sobrasada World | Form" />
+    <meta
+      property="og:description"
+      content="Discover authentic Mallorcan sobrasada."
+    />
+    <meta
+      property="og:image"
+      content="URL de la imagen que quieres mostrar en las redes sociales"
+    />
+    <meta property="og:url" content="URL de tu página" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Título de tu página" />
+    <meta name="twitter:description" content="Descripción de tu página" />
+    <meta
+      name="twitter:image"
+      content="URL de la imagen que quieres mostrar en Twitter"
+    />
+
+    <!-- App Web, inidicar al navegador que elementos mostrar en un JSON -->
+    <link rel="manifest" href="site.webmanifest" />
+    <!-- icono de acceso para IOS -->
+    <link rel="apple-touch-icon" href="icon.png" />
+    <!-- Recordar que favicon.ico tiene que estar en el directorio inicial -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!-- STYLESHEET GENERAL -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- STYLESHEET FORM PAGE -->
+    <link rel="stylesheet" href="css/styleForm.css" />
+
+    <!-- Se cambia el tema de algunos navegadores -->
+    <meta name="theme-color" content="#fafafa" />
+    <!-- Código de las plataformas de Análisis -->
+    <script></script>
+    <!-- Scripts a cargar antes de la renderización -->
+    <!-- <script src="preloader.js"></script> -->
+
+    <!-- <script src="/js/main.js" defer></script> -->
+    <script src="/js/form.js" defer></script>
+  </head>
+  <body class="inter-body">
+    <div class="main__container">
+      <header class="subgrid">
+        <nav class="container__idiomas inter-light">
+          <a href="./form-es.html" class="container__es" id="nav__es">ES</a><span> / </span>
+          <a href="./form-en.html" class="container__en" id="nav__en">EN</a><span> /</span>
+          <a href="./form-sk.html" class="container__sk" id="nav__sk">SK</a>
+        </nav>
+        <img src="./img/desktop/sello.avif" alt="" class="logo" id="logo" />
+        <p class="header inter-body" id="header-main-text">
+        </p>
+      </header>
+      <!-- <main class="main__content" id="main__content"> -->
+
+     
+
+
+
+      <section class="subgrid__main__form" id="">
+        <!-- <h1 class="main__title inter-light" id="mainTitle">Sobrasada</h1>
+        <h2 class="main__subtitle inter-bold" id="mainSubtitle">World</h2> -->
+		<h1 class="page__title inter-light">Sobrasada<span class="page__title-small inter-black">World</span></h1>
+        <!-- <h2 class="page__title-small inter-black">World</h2> -->
+	
+
+        <form class="main__form" id="mainForm">
+          <section class="form__personal-data" id="formPersonalData">
+            <h3 class="personal__data-title inter-body" id="personalDataTitle">
+             
+            </h3>
+            <section class="data__name" id="dataName">
+              <label
+                for="nameInput"
+                id="nameLabel"
+                class="data__name-label inter-body"
+                ><span class="asterisk">*</span></label
+              >
+              <input
+                type="text"
+                class="data__name-input"
+                id="nameInput"
+                name="name"
+                placeholder=""
+                pattern="^[a-zA-Zà-ÿÀ-Ÿ '-]+$"
+                maxlength="25"
+                required
+              />
+            </section>
+
+            <section class="data__lastname" id="dataLastname">
+              <label
+                for="lastnameInput"
+                id="lastnameLabel"
+                class="data__lastname-label inter-body"
+                ><span class="asterisk">*</span></label
+              >
+              <input
+                type="text"
+                class="data__lastname-input"
+                id="lastnameInput"
+                name="lastname"
+                placeholder=""
+                pattern="^[a-zA-Zà-ÿÀ-Ÿ '-]+$"
+                maxlength="40"
+                required
+              />
+            </section>
+
+            <section class="data__email" id="dataEmail">
+              <label
+                for="emailInput"
+                id="emailLabel"
+                class="data__email-label inter-body"
+                ><span class="asterisk">*</span></label
+              >
+              <input
+                type="email"
+                class="data__email-input"
+                id="emailInput"
+                name="email"
+                placeholder=""
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                maxlength="50"
+                required
+              />
+            </section>
+          </section>
+
+          <section class="form__shipping-data" id="formShippingData">
+            <h3 class="shipping__data-title inter-body" id="shippingDataTitle">
+              
+            </h3>
+            <section class="data__movil" id="dataMovil">
+              <label
+                for="movilInput"
+                id="movilLabel"
+                class="data__movil-label inter-body"
+                ><span class="asterisk">*</span></label
+              >
+              <input
+                type="tel"
+                class="data__movil-input"
+                id="movilInput"
+                name="movil"
+                placeholder=""
+                pattern="[0-9+\-() ]+"
+                maxlength="12"
+                required
+              />
+            </section>
+
+            <section class="data__adress" id="dataAdress">
+              <label
+                for="adressInput"
+                id="adressLabel"
+                class="data__adress-label inter-body"
+                ><span class="asterisk">*</span></label
+              >
+              <input
+                type="text"
+                class="data__adress-input"
+                id="adressInput"
+                name="adress"
+                placeholder=""
+                pattern="^[a-zA-Z0-9\s,.'-]{3,}$"
+                maxlength="50"
+                required
+              />
+            </section>
+
+            <section class="data__city-pc" id="dataCityPc">
+              <div class="data__city" id="dataCity">
+                <label
+                  for="cityInput"
+                  id="cityLabel"
+                  class="data__city-label inter-body"
+                  ><span class="asterisk">*</span></label
+                >
+                <input
+                  type="text"
+                  class="data__city-input"
+                  id="cityInput"
+                  name="city"
+                  placeholder=""
+                  pattern="^[a-zA-Zà-ÿÀ-Ÿ '-]+$"
+                  maxlength="25"
+                  required
+                />
+              </div>
+              <div class="data__pc" id="dataPc">
+                <label
+                  for="pcInput"
+                  id="pcLabel"
+                  class="data__pc-label inter-body"
+                  ><span class="asterisk">*</span></label
+                >
+                <input
+                  type="number"
+                  class="data__pc-input"
+                  id="pcInput"
+                  name="pc"
+                  placeholder=""
+                  pattern="^[a-zA-Z0-9\s]{3,10}$"
+                  maxlength="7"
+                  required
+                />
+              </div>
+            </section>
+          </section>
+
+          <section class="form__btn-text" id="formBtnText">
+            <button type="submit" class="form__btn inter-body" id="formBtn">
+            </button>
+            <p class="form__text-data" id="formTextData">
+            </p>
+          </section>
+        </form>
+	  </section>
+
+	  <section class="aside__bread">
+		<aside class="main__aside-left"></aside>
+		<aside class="main__aside-center"></aside>
+		<section class="aside__imgcontainer">
+			<img
+			src="./img/desktop/sobrasada-arriba_1.avif"
+			alt=""
+			class="sobrasada-arriba"
+			id="sobrasadaArriba"
+		  />
+		
+		  <section class="discount__offer-month" id="discountText">
+			  <h4 class="discount__offer-number inter-bold" id="discountOfferNumber">50%</h4>
+			  <p class="discount__offer-text inter-bold" id="discountOfferText">Fecha Límite</p>
+		  </section>
+		  
+		  <img
+			src="./img/desktop/sobrasada-abajo_1.avif"
+			alt=""
+			class="sobrasada-abajo"
+			id="sobrasadaAbajo"
+		  />
+		</section>
+		<aside class="main__aside-right"></aside>
+		
+	  </section>
+
+	
+
+    </div>
+    <span class="" id="button__description-mes"></span>
+  </body>
+</html>

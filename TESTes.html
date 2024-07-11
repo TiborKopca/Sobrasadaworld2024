@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- SEO = Básico -->
+    <!-- Cada página del sitio tiene que ser diferente el título y la descripción -->
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Etiquetas Open Graph y Twitter Card, para crear el SEO de Redes Sociales -->
+    <meta property="og:title" content="Título de tu página" />
+    <meta property="og:description" content="Descripción de tu página" />
+    <meta
+      property="og:image"
+      content="URL de la imagen que quieres mostrar en las redes sociales"
+    />
+    <meta property="og:url" content="URL de tu página" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Título de tu página" />
+    <meta name="twitter:description" content="Descripción de tu página" />
+    <meta
+      name="twitter:image"
+      content="URL de la imagen que quieres mostrar en Twitter"
+    />
+
+    <!-- App Web, inidicar al navegador que elementos mostrar en un JSON -->
+    <link rel="manifest" href="site.webmanifest" />
+    <!-- icono de acceso para IOS -->
+    <link rel="apple-touch-icon" href="icon.png" />
+    <!-- Recordar que favicon.ico tiene que estar en el directorio inicial -->
+
+    <!-- links de estilos -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Se cambia el tema de algunos navegadores -->
+    <meta name="theme-color" content="#fafafa" />
+    <!-- Código de las plataformas de Análisis -->
+    <script></script>
+
+    <!-- Scripts a cargar antes de la renderización -->
+    <!-- <script src="preloader.js"></script> -->
+    
+    <script src="/js/main.js" defer></script>
+
+  </head>
+  <body>
+    <div id="container" class="main__container">
+      <nav class="container__idiomas inter-light">
+        <a href="?lang=es" class="container__es">ES</a><span> / </span>
+        <a href="?lang=en" class="container__en">EN</a><span> /</span>
+        <a href="?lang=sk" class="container__sk">SK</a>
+      </nav>
+      <img src="/img/desktop/sello.avif" alt="" class="logo" id="logo" />
+      <p class="header inter-body">
+        Certificamos que este producto es auténtica Sobrasada de Mallorca con
+        Denominación de Origen Protegida. Elaborada siguiendo métodos
+        tradicionales en la isla de Mallorca, garantizamos su calidad superior y
+        sabor único. Sobrasada World se compromete a ofrecer solo lo mejor de
+        nuestra tierra.
+      </p>
+      <img
+        src="/img/desktop/sobrasada-arriba_1.avif"
+        alt=""
+        class="sobrasada-arriba"
+        id="sobrasadaArriba"
+      />
+      <img
+        src="/img/desktop/sobrasada-abajo_1.avif"
+        alt=""
+        class="sobrasada-abajo"
+        id="sobrasadaAbajo"
+      />
+      <h1 class="page__title inter-light">Sobrasada</h1>
+      <h2 class="page__title-small inter-black">World</h2>
+      <p class="main__text inter-body">
+        Sobrasada World: La auténtica experiencia mallorquina en tu mesa. Desde
+        el corazón de Mallorca, ofrecemos la mejor sobrasada mallorquina, un
+        embutido tradicional con Denominación de Origen. Nuestra pasión por este
+        producto gourmet único nos impulsa a compartirlo con el mundo. Con
+        pedidos online y envíos internacionales, garantizamos la autenticidad de
+        cada sobrasada. Descubre el sabor tradicional y la textura untable de
+        nuestra sobrasada premium. Disfruta de la esencia de Mallorca en cada
+        bocado, con Sobrasada World.
+      </p>
+      <section class="button__container">
+        <a href="#" class="main__button">Pedido</a>
+        <p class="button__description" id="buttonDescription">
+          Descuento del 50% de todos nuestros producto, en el mes de ¿<span
+            class=""
+            id="button__description-mes"
+          ></span
+          >?
+        </p>
+      </section>
+      <aside class="main__aside-left"></aside>
+      <aside class="main__aside-center"></aside>
+      <section class="aside__imgcontainer">
+        <img
+          src="/img/desktop/pan-largo.avif"
+          alt="scrollable image"
+          id="scrollableImage"
+          class="scrollable-image"
+        />
+      </section>
+      <aside class="main__aside-right"></aside>
+    </div>
+   
+  </body>
+</html>
