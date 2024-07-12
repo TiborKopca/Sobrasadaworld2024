@@ -57,7 +57,10 @@ function detectarIdioma() {
 //OBTAIN LOCALE DATA FROM THE JSON FILE
 async function getDataFromJSONfile() {
   //API_URL CAN BE CHANGED FROM LOCALHOST TO THE SERVER URL
-  const API_URL = "../JSON/DB.json";
+  const API_URL =
+    "https://tiborkopca.github.io/Sobrasadaworld2024/JSON/DB.json";
+    const API_URL_LOCAL =
+    "../JSON/DB.json";
   const localLanguage = document.documentElement.lang;
   console.log(localLanguage);
   let localLanguageData = {};
