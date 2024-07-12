@@ -6,6 +6,7 @@ function detectarIdioma() {
   console.log(window.location.pathname);
 
   const idioma = navigator.language;
+  console.log(idioma);
   // si la cookie no existe
   if (document.cookie === "") {
     // redirigir a la pagina de idioma al inicio
@@ -16,6 +17,8 @@ function detectarIdioma() {
         }
         break;
       case "en-EN":
+      case "en-US":
+      case "en-GB":
         if (window.location.pathname !== "/index.html") {
           window.location.href = "index.html";
         }
@@ -29,19 +32,22 @@ function detectarIdioma() {
   }
   // si la cookie existe
   else {
-    // console.log(window.location.href) //http://127.0.0.1:5500/index.html
-    switch (window.location.href) {
-      case "es-ES":
+    console.log(document.cookie);
+    console.log(window.location.href); //http://127.0.0.1:5500/index.html
+    switch (document.cookie) {
+      case "idioma=es-ES":
         if (window.location.pathname !== "/es.html") {
           window.location.href = "es.html";
         }
         break;
-      case "en-EN":
+      case "idioma=en-EN":
+      case "idioma=en-US":
+      case "idioma=en-GB":
         if (window.location.pathname !== "/index.html") {
           window.location.href = "index.html";
         }
         break;
-      case "sk-SK":
+      case "idioma=sk-SK":
         if (window.location.pathname !== "/sk.html") {
           window.location.href = "sk.html";
         }
@@ -118,17 +124,22 @@ function mesActual() {
     navigator.language === "es-ES"
   ) {
     mesDOM.textContent = meses[mes];
+  } else {
+    //NO COOKIE
+    mesDOM.textContent = months[mes];
   }
 }
 
 //INSERT COOKIES EVENT LISTENERS
 document.getElementById("nav__es").addEventListener("click", () => {
-  const fechaActual = new Date();
+  document.cookie = `idioma=es-ES;`;
+
+  // const fechaActual = new Date();
   //30 days in milliseconds
-  const fechaExpiracion = new Date(
-    fechaActual.getTime() + 1000 * 60 * 60 * 24 * 7
-  );
-  document.cookie = `idioma=es-ES; expires=${fechaExpiracion.toUTCString()}; path=/language-cookie`;
+  // const fechaExpiracion = new Date(
+  //   fechaActual.getTime() + 1000 * 60 * 60 * 24 * 7
+  // );
+  // document.cookie = `idioma=es-ES; expires=${fechaExpiracion.toUTCString()}; path=/language-cookie`;
 });
 
 document.getElementById("nav__en").addEventListener("click", () => {
@@ -161,7 +172,7 @@ async function getDataFromJSONfile() {
     // console.log(newCharacterJSON.value);
     // let phrase = newCharacterJSON.value;
     // outputJoke.innerHTML = phrase;
-    
+
     switch (localLanguage) {
       case "sk":
         localLanguageData = localeData.sk;
@@ -172,14 +183,15 @@ async function getDataFromJSONfile() {
         localLanguageData = localeData.en;
         // console.log(localLanguageData)
         break;
-        // return localLanguageData;
+      // return localLanguageData;
       case "es":
         localLanguageData = localeData.es;
         // console.log(localLanguageData)
         // return localLanguageData;
         break;
       default:
-        // return console.log(localeData.en);
+        localLanguageData = localeData.en;
+      // return console.log(localeData.en);
     }
     fillLocaleData(localLanguageData);
   } catch (error) {
@@ -201,7 +213,8 @@ function fillLocaleData(data) {
   const button = document.querySelector("#button-main");
   button.innerHTML = data.main_button;
   const buttonDescription = document.querySelector("#buttonDescription");
-  buttonDescription.textContent = data.main_button_description;
+  buttonDescription.innerHTML =
+    data.main_button_description + " " + buttonDescription.textContent;
 }
 // Zona de Control
 function main() {
