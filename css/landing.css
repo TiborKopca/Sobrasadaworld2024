@@ -5,6 +5,7 @@
   grid-template-columns: subgrid;
   grid-template-rows: auto auto auto auto;
   /* gap : 1rem; */
+  align-content: space-around;
 }
 
 .sobrasada-arriba {
@@ -27,16 +28,14 @@
     /* grid-area: page__title; */
     grid-column: 1 / span 2;
     grid-row: 2 / span 1;
-    /* font-size: 4rem; */
     color: var(--color-title);
   
     font-family: Inter;
     font-size: 8rem;
     font-style: normal;
     font-weight: 200;
-    /* line-height: 0; */
-    line-height: 0.9;
-    align-self: end;
+    /* line-height: 0.9; */
+    /* align-self: end; */
     /* justify-self: center; */
   }
   .page__title-small {
@@ -44,13 +43,12 @@
     grid-row: 2 / span 1;
     /* font-size: 1.5rem; */
     color: var(--color-title);
-  
     font-family: Inter;
     font-size: 5rem;
     font-style: normal;
     font-weight: 900;
     /* line-height: 0; */
-    /* line-height: 0.8; */
+    line-height: 2.8;
     align-self: end;
     justify-self: center;
   }

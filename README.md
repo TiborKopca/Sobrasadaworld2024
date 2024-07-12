@@ -15,7 +15,7 @@
 ## Screenshot
 >Figma Design Index
 ![figma_design1](/img/screenshots/index.html.png)
->Figme Design Form
+>Figma Design Form
 ![figma_design2](/img/screenshots/formulario.html_v1.png)
 >Figma Design Confirmation
 ![figma_design3](/img/screenshots/envio.html.png)
