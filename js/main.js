@@ -153,7 +153,7 @@ document.getElementById("nav__sk").addEventListener("click", () => {
 //OBTAIN LOCALE DATA FROM THE JSON FILE - on the base of the html lang code
 async function getDataFromJSONfile() {
   //API_URL CAN BE CHANGED FROM LOCALHOST TO THE SERVER URL
-  const API_URL = "../JSON/DB.json";
+  const API_URL = "https://tiborkopca.github.io/Sobrasadaworld2024/JSON/DB.json";
   const localLanguage = document.documentElement.lang;
   // console.log(localLanguage);
   let localLanguageData = {};

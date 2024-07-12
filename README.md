@@ -27,7 +27,7 @@
 
 ## Authors
 
-- [@TiborKopca](https://github.com/TiborKopca)
+- [@TiborKopca](https://tiborkopca.github.io/Sobrasadaworld2024/)
 
 ## Special Thanks 
 >to [@ToniFerra](https://github/ToniFerra) for the sobrasada mallorquina real he donated! 🥰
