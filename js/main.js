@@ -12,20 +12,29 @@ function detectarIdioma() {
     // redirigir a la pagina de idioma al inicio
     switch (idioma) {
       case "es-ES":
-        if (window.location.pathname !== "/es.html") {
+        if (paginaActual !== "es.html") {
           window.location.href = "es.html";
+        } else {
+          break;
         }
         break;
       case "en-EN":
       case "en-US":
       case "en-GB":
-        if (window.location.pathname !== "/index.html") {
+        if (paginaActual !== "index.html") {
           window.location.href = "index.html";
+        } else {
+          break;
         }
         break;
       case "sk-SK":
-        if (window.location.pathname !== "/sk.html") {
+        if (paginaActual !== "sk.html") {
           window.location.href = "sk.html";
+        }
+        break;
+      default:
+        if (paginaActual !== "index.html") {
+          window.location.href = "index.html";
         }
         break;
     }
@@ -36,20 +45,25 @@ function detectarIdioma() {
     console.log(window.location.href); //http://127.0.0.1:5500/index.html
     switch (document.cookie) {
       case "idioma=es-ES":
-        if (window.location.pathname !== "/es.html") {
+        if (paginaActual !== "es.html") {
           window.location.href = "es.html";
         }
         break;
       case "idioma=en-EN":
       case "idioma=en-US":
       case "idioma=en-GB":
-        if (window.location.pathname !== "/index.html") {
+        if (paginaActual !== "index.html") {
           window.location.href = "index.html";
         }
         break;
       case "idioma=sk-SK":
-        if (window.location.pathname !== "/sk.html") {
+        if (paginaActual !== "sk.html") {
           window.location.href = "sk.html";
+        }
+        break;
+      default:
+        if (paginaActual !== "index.html") {
+          window.location.href = "index.html";
         }
         break;
     }
@@ -153,7 +167,8 @@ document.getElementById("nav__sk").addEventListener("click", () => {
 //OBTAIN LOCALE DATA FROM THE JSON FILE - on the base of the html lang code
 async function getDataFromJSONfile() {
   //API_URL CAN BE CHANGED FROM LOCALHOST TO THE SERVER URL
-  const API_URL = "https://tiborkopca.github.io/Sobrasadaworld2024/JSON/DB.json";
+  const API_URL =
+    "https://tiborkopca.github.io/Sobrasadaworld2024/JSON/DB.json";
   const localLanguage = document.documentElement.lang;
   // console.log(localLanguage);
   let localLanguageData = {};
